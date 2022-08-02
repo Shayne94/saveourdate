@@ -23,6 +23,7 @@ body {
 	line-height: 28px;
 	height: 100vh;
 	margin: 100px;
+	overflow: hidden;
 	width: 100vw;
 	@include max(1600px) {
 		margin: 50px;
