@@ -1,0 +1,67 @@
+.model {
+    &__menu {
+        @include flex-jbetween;
+        flex-direction: column;
+        border-radius: 10px 10px 0 0;
+        left: 0;
+        height: 100%;
+        padding: 30px;
+        position: absolute;
+        top: 0;
+        width: 200px;
+        li {
+            @include flex-icenter;
+            background-color: $color4;
+            border-radius: 10px;
+            box-shadow: 4px 4px 4px rgba($color: $color3, $alpha: 0.25), -4px -4px 4px rgba($color: $color1, $alpha: 0.75);
+            cursor: pointer;
+            height: calc(25% - 22.5px);
+            padding: 10px;
+            width: 100%;
+            &:hover,
+            &.active {
+                box-shadow: inset 4px 4px 4px rgba($color: $color3, $alpha: 0.25),
+                inset -4px -4px 4px rgba($color: $color1, $alpha: 0.75);
+            }
+            img {
+                width: 100%;
+            }
+        }
+    }
+    &__item {
+        &--type1 {
+            right: 0;
+            height: calc(100vh - 285px);
+            padding: 30px;
+            position: absolute;
+            top: 0;
+            width: calc(100vw - 610px);
+            @include max(1600px) {
+                height: calc(100vh - 235px);
+                width: calc(100vw - 340px);
+            }
+        }
+    }
+    &__box {
+        @include flex-center; 
+        background-color: $color4;
+        border-radius: 10px;
+        box-shadow: inset 4px 4px 4px rgba($color: $color3, $alpha: 0.25),
+            inset -4px -4px 4px rgba($color: $color1, $alpha: 0.75);
+        padding: 15px;
+        text-align: center;
+        width: calc(100vw - 610px);
+    }
+    &__cont {
+        border-radius: 10px;
+        overflow-y: auto;
+        &::-webkit-scrollbar {
+            width: 0;
+        }
+        &--type1 {     
+            img {
+                width: 90%;
+            }
+        }
+    }
+}

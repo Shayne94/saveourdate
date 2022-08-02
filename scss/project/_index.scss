@@ -1,0 +1,226 @@
+.intro {
+    @include flex-jbetween;
+    &__img {
+        background-color: $color3;
+        margin-right: 50px;
+        width: 330px;
+    }
+    &__cont {
+        width: 820px;
+    }
+    &__txt {
+        text-align: justify;
+        padding: 50px;
+        position: relative;
+        &:before {
+            content: "";
+            width: 50px;
+            height: 50px;
+            background: url(../../assets/images/about/border01.png) no-repeat;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        &:after {
+            content: "";
+            width: 50px;
+            height: 50px;
+            background: url(../../assets/images/about/border01.png) no-repeat;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            transform: scale(-1);
+        }
+    }
+    &__inner {
+        @include flex-jbetween;
+        margin-top: 50px;
+        width: 820px;
+    }
+    &__box {
+        background-color: $color1;
+        box-shadow: 3px 3px 3px rgba($color: $color2, $alpha: 0.3);
+        &--profile {
+            width: 425px;
+        }
+        &--edu {
+            width: 345px;
+        }
+    }
+    &__title {
+        background-color: $color3;
+        color: $color1;
+        padding: 17px 0 13px 75px;
+    }
+    &__table,
+    &__school {
+        padding: 20px 30px 15px;
+    }
+    &__profile {
+        &:before {
+            background: url(../../assets/images/about/icon-profile.png) no-repeat;
+            content: "";
+            height: 30px;
+            left: 30px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 25px;
+        }
+    }
+    &__edu {
+        &:before {
+            background: url(../../assets/images/about/icon-edu.png) no-repeat;
+            content: "";
+            height: 30px;
+            left: 30px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 25px;
+        }
+    }
+    &__name {
+        font-weight: 500;
+    }
+    &__major {
+        padding: 0 0 0 25px;
+    }
+    &__rank {
+        padding: 0 0 0 25px;
+        span {
+            font-weight: 500;
+        }
+    }
+}
+.exp {
+    margin-top: 120px;
+    &__title {
+        padding-top: 40px;
+        position: relative;
+        text-align: center;
+        &:before {
+            background: url(../../assets/images/about/icon-exp.png) no-repeat;
+            content: "";
+            height: 30px;
+            left: 50%;
+            position: absolute;
+            top: 0;
+            transform: translateX(-50%);
+            width: 25px;
+        }
+    }
+    &__cont {
+        @include flex-jbetween;
+        margin-top: 50px;
+    }
+    &__box {
+        background-color: $color1;
+        box-shadow: 3px 3px 3px rgba($color: $color2, $alpha: 0.3);
+        padding: 25px 30px 20px;
+        width: calc(100% / 3 - 20px);
+    }
+    &__name {
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 3px;
+    }
+    &__pos {
+        margin-bottom: 3px;
+        span {
+            color: $color3;
+            font-weight: 500;
+        }
+    }
+    &__des {
+        padding-left: 30px;
+        span {
+            position: relative;
+            &:before {
+                background: url(../../assets/images/about/icon-des.png) no-repeat;
+                content: "";
+                height: 2px;
+                left: -30px;
+                position: absolute;
+                top: 10px;
+                width: 15px;
+            }
+        }
+    }
+}
+.skill {
+    margin-top: 120px;
+    &__title {
+        padding-top: 40px;
+        position: relative;
+        text-align: center;
+        &:before {
+            background: url(../../assets/images/about/icon-exp.png) no-repeat;
+            content: "";
+            height: 30px;
+            left: 50%;
+            position: absolute;
+            top: 0;
+            transform: translateX(-50%);
+            width: 25px;
+        }
+    }
+    &__cont {
+        @include flex-jbetween;
+        margin: 50px 100px 0;
+    }
+    &__img {
+        background-color: $color1;
+        box-shadow: 3px 3px 3px rgba($color: $color2, $alpha: 0.3);
+        padding: 10px;
+    }
+}
+.other {
+    @include flex-jbetween;
+    margin-top: 120px;
+    &__box {
+        background-color: $color1;
+        box-shadow: 3px 3px 3px rgba($color: $color2, $alpha: 0.3);
+        width: calc(50% - 25px);
+    }
+    &__title {
+        background-color: $color3;
+        color: $color1;
+        padding: 17px 0 13px 75px;
+    }
+    &__char {
+        &:before {
+            background: url(../../assets/images/about/icon-char.png) no-repeat;
+            content: "";
+            height: 30px;
+            left: 30px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 25px;
+        }
+    }
+    &__passion {
+        &:before {
+            background: url(../../assets/images/about/icon-passion.png) no-repeat;
+            content: "";
+            height: 30px;
+            left: 30px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 25px;
+        }
+    }
+    &__cont1 {
+        padding: 20px 30px 15px;
+        span {
+            font-weight: 500;
+        }
+    }
+    &__cont2 {
+        @include flex-jbetween;
+        align-content: center;
+        padding: 20px 30px;
+    }
+}

@@ -1,0 +1,122 @@
+#date {
+    background-image: none;
+    background-color: rgba($color: $color3, $alpha: 0.1);
+    margin: 0;
+}
+.date {
+    padding: 0;
+    left: 0;
+    top: 0;
+    @include max(1200px) {
+        left: 50px;
+        top: 50px;
+    }
+    @include max(640px) {
+        bottom: 0;
+        left: 0;     
+        padding: 20px;   
+        right: 0;
+        top: 0;
+    }
+    &__bg {
+        background: url(../../assets/images/wedding/bg.jpg) no-repeat top center;
+        background-size: auto 100%;
+        border-radius: 10px;
+        box-shadow: 10px 10px 10px rgba($color: $color3, $alpha: 0.25);
+        height: 720px;
+        margin: 0 auto;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 1080px;
+        @include max(1200px) {
+            height: calc(100vh - 100px);
+            margin: 0;
+            top: 0;
+            transform: translate(0, 0);
+            width: calc(100vw - 100px);
+        }
+        @include max(640px) {
+            height: calc(100vh - 40px);
+            width: calc(100vw - 40px);
+        }
+    }
+    &__title {
+        left: 25px;
+        position: absolute;
+        transform: scale(0.6);
+        transform-origin: 0 0;
+        top: 25px;
+        @include max(640px) {
+            left: 20px;
+            transform: scale(0.5);
+            top: 20px;
+            z-index: 10;
+        }
+        img {
+            width: 100%;
+        }
+    }
+    &__card {
+        @include flex-jbetween;
+        flex-direction: column;
+        bottom: 30px;
+        left: 25px;
+        position: absolute;
+        @include max(640px) { 
+            bottom: 120px;
+            left: 0;
+            width: 100%;
+        }
+    }
+    &__img01 {
+        margin: 15px 0 20px;
+        text-align: center;
+        width: 450px;
+        img {
+            width: 100%;
+        }
+        @include max(640px) {
+            margin: 5px 0 10px;
+            width: 100%;
+            img {
+                width: 80%;
+            }
+        }
+    }
+    &__txt01 {
+        color: $color1;
+        font-size: 39.5px;
+        letter-spacing: 2px;
+        @include max(640px) {
+            font-size: 24px;
+            text-align: center;
+        }
+    }
+    &__txt02 {
+        color: $color1;
+        font-size: 48px;
+        text-transform: uppercase;
+        @include max(640px) {
+            font-size: 28px;
+            text-align: center;
+        }
+    }
+    &__wallet {
+        bottom: 25px;
+        position: absolute;
+        right: 25px;
+        transform: scale(0.5);
+        transform-origin: 100% 100%;
+        @include max(640px) {
+            bottom: 20px;
+            right: 0;
+            text-align: center;
+            transform: scale(1);
+            width: 100%;
+            img {
+                width: 25%;
+            }
+        }
+    }
+}
