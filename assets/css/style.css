@@ -571,8 +571,8 @@ main::-webkit-scrollbar-thumb {
 @media screen and (max-width: 640px) {
   .date__bg {
     background-position-x: 55%;
-    height: calc(100vh - 40px);
-    width: calc(100vw - 40px);
+    height: 100%;
+    width: 100%;
   }
 }
 .date__title {
