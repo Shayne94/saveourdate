@@ -215,7 +215,6 @@ body {
   line-height: 28px;
   height: 100vh;
   margin: 100px;
-  overflow: hidden;
   width: 100vw;
 }
 @media screen and (max-width: 1600px) {
@@ -228,7 +227,6 @@ main {
   border-bottom-right-radius: 10px;
   padding: 30px 30px;
   position: absolute;
-  overflow-y: auto;
 }
 main::-webkit-scrollbar {
   width: 10px;
@@ -529,10 +527,8 @@ main::-webkit-scrollbar-thumb {
 }
 
 .date {
-  height: 100vh;
   padding: 0;
   margin: 0 auto;
-  width: 100vw;
 }
 @media screen and (max-width: 1200px) {
   .date {

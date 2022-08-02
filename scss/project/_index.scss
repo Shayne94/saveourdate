@@ -4,10 +4,8 @@
     margin: 0;
 }
 .date {
-    height: 100vh;
     padding: 0;
     margin: 0 auto;
-    width: 100vw;
     @include max(1200px) {
         left: 50px;
         top: 50px;
