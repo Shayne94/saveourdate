@@ -584,28 +584,38 @@ main::-webkit-scrollbar-thumb {
 }
 @media screen and (max-width: 640px) {
   .date__title {
-    left: 20px;
+    left: 15px;
     transform: scale(0.5);
-    top: 20px;
+    top: 15px;
     z-index: 10;
   }
 }
 .date__title img {
   width: 100%;
 }
+.date__cont {
+  display: flex;
+  justify-content: space-between;
+  bottom: 25px;
+  padding: 0 25px;
+  position: absolute;
+  width: 100%;
+}
+@media screen and (max-width: 640px) {
+  .date__cont {
+    bottom: 15px;
+    flex-direction: column;
+    padding: 0 15px;
+  }
+}
 .date__card {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  bottom: 30px;
-  left: 25px;
-  position: absolute;
 }
 @media screen and (max-width: 640px) {
   .date__card {
-    bottom: 120px;
-    left: 0;
-    width: 100%;
+    margin-bottom: 15px;
   }
 }
 .date__img01 {
@@ -648,16 +658,11 @@ main::-webkit-scrollbar-thumb {
   }
 }
 .date__wallet {
-  bottom: 25px;
-  position: absolute;
-  right: 25px;
   transform: scale(0.5);
   transform-origin: 100% 100%;
 }
 @media screen and (max-width: 640px) {
   .date__wallet {
-    bottom: 20px;
-    right: 0;
     text-align: center;
     transform: scale(1);
     width: 100%;
