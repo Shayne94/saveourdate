@@ -68,7 +68,7 @@
         @include max(640px) {
             bottom: 15px;
             flex-direction: column;
-            padding: 0 15px;
+            padding: 0;
         }
     }
     &__card {
